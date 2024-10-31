@@ -146,3 +146,21 @@ with open('./demo.jpg','wb') as fp:
 ```
 
 ![image-20241028174210350](https://gitee.com/bx33661/image/raw/master/path/image-20241028174210350.png)
+
+
+
+### `fakeUA `库的使用
+
+具体可以看`fkUA库.md`这个笔记
+
+我贴一个实战过程中使用的例子：
+
+```python
+ua = UserAgent()
+random_user_agent = ua.random
+headers = {
+    "User-Agent": random_user_agent
+}
+response = requests.get(url, headers=headers)
+```
+
