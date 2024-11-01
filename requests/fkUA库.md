@@ -102,6 +102,3 @@ response = requests.get('https://example.com', headers=headers)
 print(response.text)
 ```
 
-### 总结
-
-`fake-useragent` 是一个简单易用的库，可以帮助你生成随机的 User-Agent 字符串，从而避免被目标网站识别为爬虫。通过指定浏览器类型、使用缓存或禁用网络请求，你可以进一步定制 `fake-useragent` 的行为。
